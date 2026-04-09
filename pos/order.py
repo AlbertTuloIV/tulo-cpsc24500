@@ -12,8 +12,8 @@ class Order:
         actual_index = index - 1
 
         if 0 <= actual_index < len(self.items):
-            removed_item = self.item.pop(actual_index)
-            print(f"Removed {removed_item}")
+            removed_item = self.items.pop(actual_index)
+            print(f"Removed {removed_item.name}")
         else:
             print("Invalid item number. Nothing removed.")
         
