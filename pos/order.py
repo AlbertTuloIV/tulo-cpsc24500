@@ -17,26 +17,26 @@ class Order:
         else:
             print("Invalid item number. Nothing removed.")
         
-        def subtotal(self) -> float:
-            return sum(item.price for item in self.items)
+    def subtotal(self) -> float:
+        return sum(item.price for item in self.items)
         
-        def tax(self) -> float:
-            return self.subtotal() * 0.0875 ## 8.75%
+    def tax(self) -> float:
+        return self.subtotal() * 0.0875 ## 8.75%
         
-        def __str__(self) -> str:
-            lineItems = []
-            lineItems.append(f"Customer: {self.customer_name}")
-            lineItems.append("-" * 30)
+    def __str__(self) -> str:
+        lineItems = []
+        lineItems.append(f"Customer: {self.customer_name}")
+        lineItems.append("-" * 30)
 
-            if not self.items:
-                lineItems.append("No items in order.")
-            else:
-                for i, item in enumerate(self.items, start=1):
-                    lineItems.append(f"{i}. {item}")
-            
-            lineItems.append("-" * 30)
-            lineItems.append(f"Subtotal: ${self.subtotal():.2f}")
-            lineItems.append(f"Tax (8.75%): ${self.tax():.2f}")
-            lineItems.append(f"Total: ${self.total():.2f}")
+        if not self.items:
+            lineItems.append("No items in order.")
+        else:
+            for i, item in enumerate(self.items, start=1):
+                lineItems.append(f"{i}. {item}")
+        
+        lineItems.append("-" * 30)
+        lineItems.append(f"Subtotal: ${self.subtotal():.2f}")
+        lineItems.append(f"Tax (8.75%): ${self.tax():.2f}")
+        lineItems.append(f"Total: ${self.total():.2f}")
 
-            return "\n".join(lineItems)
+        return "\n".join(lineItems)
