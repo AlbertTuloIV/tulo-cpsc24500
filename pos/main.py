@@ -23,10 +23,10 @@ def main():
     print(f"* {title.center(width - 4)} *")
     print("*" * width)
 
-    name = input("What is your name? ")
+    customerName = input("What is your name? ")
 
     isOrdering = True
-    order = Order(name)
+    order = Order(customerName)
     orderStep = 0
 
     while isOrdering:
@@ -130,8 +130,13 @@ def main():
                                 orderStep = 0
                                 goodChoice = True
                     
-            
-    
+            case 3:
+                print("=" * width)
+                print(f"{title.center(width - 4)}")
+                print("=" * width)
+                print(Order.__str__(order))
+                orderStep = 0
+                
 
 
     print("you have completed ordering!")
