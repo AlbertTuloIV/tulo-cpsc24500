@@ -6,5 +6,5 @@ class MenuItem:
         self.size = size
         self.price = price
 
-    def __str__self(self) -> str:
+    def __str__(self) -> str:
         return f"{self.name} ({self.size}) - ${self.price:.2f}"
