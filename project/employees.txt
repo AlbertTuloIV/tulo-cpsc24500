@@ -1,0 +1,8 @@
+Alice Johnson	E001	45.00	42.5
+Bob Smith	E002	38.00	40.0
+Carol Davis	E003	32.00	38.5
+David Lee	E004	50.00	45.0
+Eva Martinez	E005	35.00	41.0
+Frank Wilson	E006	28.00	40.0
+Grace Chen	E007	30.00	43.0
+Henry Brown	E008	33.00	37.5
