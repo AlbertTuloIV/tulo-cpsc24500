@@ -1,6 +1,6 @@
 from pet import Pet
 
-class Dog(pet):
+class Dog(Pet):
 
     def __init__(self, name, breed):
         super().__init__(name, "Dog")

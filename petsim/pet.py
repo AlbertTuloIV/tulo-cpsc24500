@@ -14,7 +14,8 @@ class Pet:
         if value < Pet.MIN_STAT:
             return Pet.MIN_STAT
         if value > Pet.MAX_STAT:
-            return Pet.Max_STAT
+            return Pet.MAX_STAT
+        return value
         
     def feed(self):
         self._hunger = self._clamp(self._hunger - 20)
