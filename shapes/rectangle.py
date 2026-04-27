@@ -17,4 +17,4 @@ class Rectangle(Shape):
         return 2 * (self.width + self.height)
     
     def describe(self) -> str:
-        return f"Rectable {self.width} x {self.height}"
+        return f"Rectangle {self.width} x {self.height}"
