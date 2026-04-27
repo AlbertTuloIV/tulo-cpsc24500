@@ -7,7 +7,7 @@ class Rectangle(Shape):
             raise ValueError("Width must be a positive number.")
         if not isinstance(height, (int, float)) or height <= 0:
             raise ValueError("Height must be a positive number.")
-        self.widht = float(width)
+        self.width = float(width)
         self.height = float(height)
 
     def area(self) -> float:
