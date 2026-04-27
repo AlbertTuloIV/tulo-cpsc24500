@@ -1,0 +1,36 @@
+353b128 Add git log output for submission
+d8e4620 Fix largest_shape output to print area on same line
+2386e4d Fix Triangle describe typo and side_c label
+3bd8424 Fix Rectangle describe typo (Rectable -> Rectangle)
+6a8ba76 Fix typo setting width in Rectangle
+84ac5bf Add Gallery class and interactive CLI
+c9d8cbc Add Rectangle and Triangle shape classes
+54b6e73 Add Shape abstract base and Circle implementation
+02110c6 Merge pull request #3 from AlbertTuloIV/ATULO/PetSimulator
+195b534 Fix Dog inheritance and Pet._clamp return
+311d077 Create simulator.py
+c6a6aca Add Fish pet class
+3cede7b Add Dog pet subclass
+f3a418d Add Cat subclass with feed/play/purr
+57fb08e Add Pet class with basic stats/actions
+9a1fe43 Merge pull request #2 from AlbertTuloIV/ATULO/PayrollSystem-Assignment4
+bc94c5e Updated payroll_processor.py and employee.py fixed the typos
+592c4f8 Add main menu for Payroll Management System
+e0a7271 add payroll_report.py with PayrollReport class with display and file output.
+84b49e4 Added general content of PayrollProcessor class in payroll_processor.py
+c45c9ca Added created employee.py, main.py, payroll_process.py, payroll_report.py and included employees.text. Started implementing items in the employee class.
+625331a Update .gitignore to include __pycache__ files for menu_item and order
+687aa3d Merge branch 'main' of https://github.com/AlbertTuloIV/tulo-cpsc24500
+24fbcee Merge pull request #1 from AlbertTuloIV/feature/pos-system
+e67296f Ignore __pycache__
+876b152 Ignore __pycache__
+c468185 Fix bugs: MenuItem.__str__, tax display, center() crashes, typos
+f055fff 	modified:   pos/main.py 	modified:   pos/order.py
+2b92eb0 	modified:   pos/main.py 	modified:   pos/order.py Added size functionality, wrapped items into switch cases for options menu, refactored invalidChoiceMsg for cleaner code
+978af31 	modified:   pos/main.py 	modified:   pos/order.py Added the functionality to order a drink in main.py, need to still implement sizing and formatting properly.
+33e8dc6 On branch feature/pos-system  Changes to be committed: 	new file:   pos/main.py 	new file:   pos/menu_item.py 	new file:   pos/order.py added main.py, menu_item.py and order.py. Created the class for menu_item and then using menu_item in order.py to have subtotal, tax, remove and add items, and list each line item out with the subottal. tax and total
+9ea3442 Add fortune output, validation, and color support
+de04c51 Add formatted fortune reading output
+9056b16 Add fortune_teller.py initial stub
+112372e Add random guess game, fun fact and float demo
+d3745ca Add starter files and interactive welcome script
