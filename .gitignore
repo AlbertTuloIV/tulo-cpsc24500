@@ -1,3 +1,2 @@
 /.venv
-pos/__pycache__/menu_item.cpython-314.pyc
-pos/__pycache__/order.cpython-314.pyc
+__pycache__/
