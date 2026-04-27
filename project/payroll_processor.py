@@ -36,7 +36,12 @@ class PayrollProcessor:
     def find_highest_paid(self) -> Employee | None:
         if not self._employees:
             return None
-        return max(self._employees, key=lambda e: e.calcualte_gross_pay())
+        return max(self._employees, key=lambda e: e.calculate_gross_pay())
+
+    def find_lowest_paid(self) -> Employee | None:
+        if not self._employees:
+            return None
+        return min(self._employees, key=lambda e: e.calculate_gross_pay())
     
     def get_employee_count(self) -> int:
         return len(self._employees)

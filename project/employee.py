@@ -8,7 +8,7 @@ class Employee:
 
     @property
     def name(self) -> str:
-        return self.__qualname__
+        return self._name
     
     @name.setter
     def name(self, value: str):
@@ -38,6 +38,7 @@ class Employee:
         value = float(value)
         if value < 0:
             raise ValueError("Hourly rate cannot be negative.")
+        self._hourly_rate = value
         
 
     @property
