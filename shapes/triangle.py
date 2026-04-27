@@ -7,7 +7,7 @@ class Triangle(Shape):
     def __init__(self, side_a: float, side_b: float, side_c: float) -> None:
         for label, value in (("side_a", side_a),
                             ("side_b", side_b),
-                            ("side_C", side_c)):
+                            ("side_c", side_c)):
             if not isinstance(value, (int, float)) or value <= 0:
                 raise ValueError(f"{label} must be a positive number.")
             
@@ -32,7 +32,7 @@ class Triangle(Shape):
         return self.side_a + self.side_b + self.side_c
     
     def describe(self) -> str:
-        return(
-            f"Tirangle with sides "
+        return (
+            f"Triangle with sides "
             f"{self.side_a}, {self.side_b}, {self.side_c}"
         )
