@@ -57,8 +57,8 @@ def _show_largest_shape(gallery: Gallery) -> None:
     if largest is None:
         print("Gallery is empty.")
     else:
-        print(f"Largest shape: {largest.describe()}")
-        f"(area: {largest.area():.2f})"
+        print(f"Largest shape: {largest.describe()} "
+              f"(area: {largest.area():.2f})")
 
 def main() -> None:
     gallery = Gallery("My Shapes")
