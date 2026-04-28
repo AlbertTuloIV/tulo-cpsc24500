@@ -43,7 +43,7 @@ class Catalog:
         for i in self._items:
             if i.title.lower() == key:
                 return i
-            return None
+        return None
         
     def __len__(self):
         return len(self._items)

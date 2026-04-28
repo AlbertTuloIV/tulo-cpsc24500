@@ -21,10 +21,10 @@ def load_catalog(catalog: Catalog, path: str) -> int:
             if len(parts) < 7:
                 print(f"Skipping malformed line {lineno}: {line!r}")
                 continue
-            item_type, title, author, year, e1, e1, checked = parts[:7]
+            item_type, title, author, year, e1, e2, checked = parts[:7]
             try:
                 item = ItemFactory.create_item(
-                    item_type, title, author, year, e1, e1, checked
+                    item_type, title, author, year, e1, e2, checked
                 )
                 catalog.add_item(item)
                 count += 1
@@ -39,14 +39,14 @@ def save_catalog(catalog: Catalog, path: str) -> None:
         for item in catalog.get_all_items():
             t = item.get_item_type()
             if t == "Book":
-                e1, e1 = item.isbn, item.page_count
+                e1, e2 = item.isbn, item.page_count
             elif t == "DVD":
                 e1, e2 = item.runtime_minutes, item.rating
             else:
                 e1, e2 = item.issue_number, item.month
             checked = "true" if item.checked_out else "false"
             f.write("\t".join(str(x) for x in [
-                t, itme.title, item.author, item.year, e1, e2, checked
+                t, item.title, item.author, item.year, e1, e2, checked
             ]) + "\n")
 
 def prompt(text: str) -> str:

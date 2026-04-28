@@ -57,7 +57,7 @@ class LibraryItem(ABC):
     def __lt__(self, other: "LibraryItem") -> bool:
         if not isinstance(other, LibraryItem):
             return NotImplemented
-        return self._title_lower() < other._title.lower()
+        return self._title.lower() < other._title.lower()
     
     def __str__(self) -> str:
         status = "CHECKED OUT" if self._checked_out else "AVAILABLE"
