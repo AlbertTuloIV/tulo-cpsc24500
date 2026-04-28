@@ -1,0 +1,9 @@
+Book	The Great Gatsby	F. Scott Fitzgerald	1925	978-0743273565	180	false
+Book	Clean Code	Robert C. Martin	2008	978-0132350884	464	true
+Book	To Kill a Mockingbird	Harper Lee	1960	978-0061120084	281	false
+DVD	Inception	Christopher Nolan	2010	148	PG-13	false
+DVD	The Matrix	The Wachowskis	1999	136	R	false
+DVD	Interstellar	Christopher Nolan	2014	169	PG-13	false
+Magazine	National Geographic	Various	2025	245	March	false
+Magazine	Scientific American	Various	2025	112	January	true
+Magazine	Wired	Various	2025	330	February	false
